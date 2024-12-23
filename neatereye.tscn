@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://ccdl84cx8jkh2"]
+
+[ext_resource type="Texture2D" uid="uid://5c3llvmm5mh" path="res://eye/Folder 1/Layer 2.PNG" id="1_y054b"]
+[ext_resource type="Texture2D" uid="uid://e310wwn3qoqu" path="res://eye/Folder 1/Layer 3.PNG" id="2_4yxja"]
+[ext_resource type="Texture2D" uid="uid://b3pm0rv48cktr" path="res://eye/Folder 2/Layer 4.PNG" id="3_uw7sk"]
+[ext_resource type="Texture2D" uid="uid://uuhrp4losmj7" path="res://eye/Folder 2/Layer 5.PNG" id="4_m6p88"]
+[ext_resource type="Texture2D" uid="uid://ym8hrnb5uvyu" path="res://eye/Folder 2/Layer 6.PNG" id="5_blist"]
+[ext_resource type="Texture2D" uid="uid://be1c6wcr0jiys" path="res://eye/Folder 2/Layer 7.PNG" id="6_p5msx"]
+[ext_resource type="Texture2D" uid="uid://djtlgdxsbs0um" path="res://eye/Folder 2/pupil.png" id="7_j6n5e"]
+[ext_resource type="Texture2D" uid="uid://cdt8awgm2huh5" path="res://eye/Layer 8.PNG" id="8_h5er4"]
+[ext_resource type="Texture2D" uid="uid://bck3fsauvvpmk" path="res://eye/Layer 9.PNG" id="9_4chf4"]
+[ext_resource type="Texture2D" uid="uid://6gulh307feid" path="res://eye/Layer 10.PNG" id="10_l2qye"]
+[ext_resource type="Texture2D" uid="uid://c3n5qdi1hdqi2" path="res://eye/Layer 11.PNG" id="11_kms7l"]
+[ext_resource type="Texture2D" uid="uid://dyxfq1xxtofes" path="res://eye/Layer 1.PNG" id="12_jv2m7"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Layer1" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("12_jv2m7")
+
+[node name="Layer2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+position = Vector2(403, 359)
+texture = ExtResource("1_y054b")
+
+[node name="Layer3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+position = Vector2(403, 359)
+texture = ExtResource("2_4yxja")
+
+[node name="Layer4" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("3_uw7sk")
+
+[node name="Layer5" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("4_m6p88")
+
+[node name="Pupil" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("7_j6n5e")
+
+[node name="Layer6" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("5_blist")
+
+[node name="Layer7" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("6_p5msx")
+
+[node name="Layer8" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("8_h5er4")
+
+[node name="Layer9" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("9_4chf4")
+
+[node name="Layer10" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("10_l2qye")
+
+[node name="Layer11" type="Sprite2D" parent="."]
+position = Vector2(403, 359)
+texture = ExtResource("11_kms7l")
