@@ -1,0 +1,369 @@
+[gd_scene load_steps=16 format=3 uid="uid://dsuufo41iiluw"]
+
+[ext_resource type="Texture2D" uid="uid://dyxfq1xxtofes" path="res://eye/Layer 1.PNG" id="1_eubuf"]
+[ext_resource type="Script" path="res://eye_demo.gd" id="1_ugwef"]
+[ext_resource type="Texture2D" uid="uid://c3n5qdi1hdqi2" path="res://eye/Layer 11.PNG" id="2_b6wh8"]
+[ext_resource type="Texture2D" uid="uid://5c3llvmm5mh" path="res://eye/Folder 1/Layer 2.PNG" id="3_ybmci"]
+[ext_resource type="Texture2D" uid="uid://e310wwn3qoqu" path="res://eye/Folder 1/Layer 3.PNG" id="4_snbpn"]
+[ext_resource type="Texture2D" uid="uid://b3pm0rv48cktr" path="res://eye/Folder 2/Layer 4.PNG" id="5_nsiei"]
+[ext_resource type="Texture2D" uid="uid://uuhrp4losmj7" path="res://eye/Folder 2/Layer 5.PNG" id="6_eisnd"]
+[ext_resource type="Texture2D" uid="uid://djtlgdxsbs0um" path="res://eye/Folder 2/pupil.png" id="7_i8tyd"]
+[ext_resource type="Texture2D" uid="uid://ym8hrnb5uvyu" path="res://eye/Folder 2/Layer 6.PNG" id="8_6x3pu"]
+[ext_resource type="Texture2D" uid="uid://be1c6wcr0jiys" path="res://eye/Folder 2/Layer 7.PNG" id="9_hol8x"]
+[ext_resource type="Texture2D" uid="uid://bck3fsauvvpmk" path="res://eye/Layer 9.PNG" id="10_4bg7t"]
+[ext_resource type="Texture2D" uid="uid://6gulh307feid" path="res://eye/Layer 10.PNG" id="11_f83pu"]
+
+[sub_resource type="Animation" id="Animation_j28l6"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("eye:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("eye/sclera/iris:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.466667, 0.966667, 1.56667, 2, 3.98708, 4.26557, 4.42897, 4.58311, 4.65152, 4.72691, 4.80798, 4.88713, 4.96252, 5.04358),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(125.373, 185.075), Vector2(-62.6866, 214.925), Vector2(-202.985, 77.6119), Vector2(-62.6866, 214.925), Vector2(125.373, 185.075), Vector2(125.373, 185.075), Vector2(125.373, 185.075), Vector2(125.373, 185.075), Vector2(125.373, 185.075), Vector2(-74.627, 107.463), Vector2(125.373, 185.075), Vector2(295.522, 301.493), Vector2(-74.627, 107.463), Vector2(125.373, 185.075), Vector2(295.522, 301.493)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("eye:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333, 0.966667, 1.63333, 1.86667, 2.13333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.113446, 0.0, 0.0, 0.0, 0.0279253, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("eye:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3, 3.3, 3.31561, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.335, 0.335), Vector2(0.335, 0.135), Vector2(0.335, 0.335), Vector2(0.335, 0.335)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("eye:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.3, 3.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("eye/sclera:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(3.2, 3.3, 3.30229, 3.3638, 3.36437),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("eye/upperlash:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(3.2, 3.3, 3.30229, 3.3638, 3.36437),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("eye/waterline:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(3.2, 3.3, 3.30229, 3.3638, 3.36437),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("eye/sclera/iris:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(4, 4.43333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.72, 0.72)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("eye/sclera/iris/Pupil:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(3.96667, 4.18648),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.79, 0.79)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("eye/sclera/iris/highlights:self_modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(4.22004, 4.65947),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("eye:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(-0.00305025, 0),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.335, 0.335), Vector2(0.225, 0.225)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("BROW:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(3, 3.3, 3.36667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(577, 318), Vector2(577, 288.3), Vector2(577, 318)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("BROW:rotation")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(4.23333, 4.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -0.261799]
+}
+
+[sub_resource type="Animation" id="Animation_1yt4w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("eye/sclera/iris:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(125.373, 185.075)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("eye:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("eye:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.335, 0.335)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("eye:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("eye/sclera:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("eye/sclera/iris:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("eye/sclera/iris/highlights:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BROW:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(577, 318)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("BROW:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0awxh"]
+_data = {
+"RESET": SubResource("Animation_1yt4w"),
+"new_animation": SubResource("Animation_j28l6")
+}
+
+[node name="eye demo" type="Node2D"]
+position = Vector2(1159, 711)
+scale = Vector2(-1, -1)
+script = ExtResource("1_ugwef")
+
+[node name="Layer1" type="Sprite2D" parent="."]
+position = Vector2(618, 678)
+texture = ExtResource("1_eubuf")
+
+[node name="BROW" type="Sprite2D" parent="."]
+position = Vector2(577, 318)
+scale = Vector2(-0.22, -0.22)
+texture = ExtResource("2_b6wh8")
+
+[node name="eye" type="Sprite2D" parent="."]
+position = Vector2(577, 287)
+rotation = 3.14159
+scale = Vector2(0.335, 0.335)
+
+[node name="bottom fold" type="Sprite2D" parent="eye"]
+modulate = Color(1, 1, 1, 0.156863)
+position = Vector2(-62.6866, -358.209)
+texture = ExtResource("3_ybmci")
+
+[node name="top fold" type="Sprite2D" parent="eye"]
+modulate = Color(1, 1, 1, 0.156863)
+position = Vector2(-62.6866, -256.716)
+texture = ExtResource("4_snbpn")
+
+[node name="sclera" type="Sprite2D" parent="eye"]
+clip_children = 2
+position = Vector2(-59.7014, -367.164)
+texture = ExtResource("5_nsiei")
+
+[node name="iris" type="Sprite2D" parent="eye/sclera"]
+position = Vector2(125.373, 185.075)
+texture = ExtResource("6_eisnd")
+offset = Vector2(-191.045, -128.358)
+
+[node name="Pupil" type="Sprite2D" parent="eye/sclera/iris"]
+position = Vector2(71.6419, 2.98507)
+rotation = 6.28319
+texture = ExtResource("7_i8tyd")
+offset = Vector2(-247.368, -163.713)
+
+[node name="highlights" type="Sprite2D" parent="eye/sclera/iris"]
+position = Vector2(-435.821, -253.731)
+texture = ExtResource("8_6x3pu")
+
+[node name="waterline" type="Sprite2D" parent="eye"]
+position = Vector2(-59.7014, -373.134)
+texture = ExtResource("9_hol8x")
+
+[node name="bottomlash" type="Sprite2D" parent="eye"]
+position = Vector2(-20.8955, -370.149)
+texture = ExtResource("10_4bg7t")
+
+[node name="upperlash" type="Sprite2D" parent="eye"]
+position = Vector2(-35.8209, -352.239)
+texture = ExtResource("11_f83pu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0awxh")
+}
